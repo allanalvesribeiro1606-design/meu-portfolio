@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Allan Alves Ribeiro</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        text-align: center;
+      }
+
+      .main {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 05px;
+        margin-top: 60px;
+        padding: 0 20px;
+        text-align: center;
+      }
+
+      .main h1 {
+        font-size: 50px;
+        text-align: center;
+      }
+
+      .main h3 {
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .container {
+        text-align: center;
+      }
+
+      .linha-personalizada {
+        width: 60%;
+        margin: 15px auto;
+      }
+
+      .botoes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        flex-wrap: wrap;
+      }
+
+      button,
+      .insta {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        background-color: #0c0c0c;
+        color: white;
+        padding: 20px 40px;
+        border: none;
+        border-radius: 50px;
+        cursor: pointer;
+        font-size: 20px;
+        margin-top: 20px;
+        text-decoration: none;
+      }
+
+      button svg,
+      .insta svg {
+        width: 26px;
+        height: 26px;
+      }
+
+      .formacao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        margin: 60px 20px;
+        text-align: center;
+      }
+
+      .formacao h1 {
+        font-size: 45px;
+        text-align: center;
+      }
+
+      .formacao p {
+        font-size: 25px;
+        text-align: center;
+        max-width: 700px;
+      }
+
+      .foto {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+
+      .habilidades {
+        text-align: center;
+        padding: 0 20px;
+        margin: 60px auto;
+      }
+
+      .habilidades h1 {
+        gap: 50px;
+        font-size: 45px;
+        text-align: center;
+      }
+
+      .habilidades p {
+        font-size: 25px;
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 20px;
+      }
+
+      .habilidades img {
+        width: 110px;
+        height: 110px;
+        margin: 0 10px;
+      }
+
+      @media (max-width: 600px) {
+        .main h1 {
+          font-size: 36px;
+        }
+        .main h3 {
+          font-size: 22px;
+        }
+        .habilidades h1,
+        .formacao h1 {
+          font-size: 32px;
+        }
+        .habilidades p,
+        .formacao p {
+          font-size: 20px;
+        }
+        .div final p {
+          font-size: 7px;
+          font-weight: bold;
+
+          .botao {
+            font-size: 20px;
+            margin-right: 8px;
+          }
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <img class="foto" src="./ALLAN.jpg" alt="Foto de Allan" />
+
+      <div class="container">
+        <h1>ALLAN ALVES RIBEIRO</h1>
+
+        <hr class="linha-personalizada" />
+        <h3>ESTUDANTE DE PROGRAMAÇÃO</h3>
+
+        <p>
+          Um estudante apaixonado aprendendo HTML, CSS e desenvolvimento web.
+        </p>
+
+        <div class="botoes">
+          <button class="btn">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path d="M13 2 3 14h8l-1 8 10-12h-8l1-8z" />
+            </svg>
+            Diga olá
+          </button>
+
+          <a
+            class="insta"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle
+                cx="17.5"
+                cy="6.5"
+                r="1"
+                fill="currentColor"
+                stroke="none"
+              />
+            </svg>
+            Instagram
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="habilidades">
+      <h1>MINHAS HABILIDADES</h1>
+      <p>
+        Um pouco sobre mim: estou aprendendo programação, sou apaixonado por
+        esportes em geral, sou uma pessoa sincera e criativa e busco sempre
+        melhorar.
+      </p>
+      <img src="./basktebol.png" alt="Basquete" />
+      <img src="./taekwondo.png" alt="Taekwondo" />
+      <img src="./fute.png" alt="Futebol" />
+    </div>
+
+    <div class="formacao">
+      <img
+        class="foto"
+        src="./lzprogramando.jpg"
+        alt="Allan estudando programação"
+      />
+      <div>
+        <h1>FORMAÇÃO</h1>
+        <p>
+          Atualmente estou cursando o ensino médio e estou aprendendo
+          programação: HTML, CSS e JavaScript. Pretendo me tornar um
+          desenvolvedor web no futuro.
+        </p>
+      </div>
+      <section class="final">
+        <h2>ficou com alguma dúvida?</h2>
+        <p>
+          Me chame no whatsapp se preferir que eu respondo com o maior prazer!
+        </p>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        />
+
+        <a href="https://wa.me/5569992776341" class="botao" target="_blank">
+          <i class="fa-brands fa-whatsapp"></i> Diga olá
+        </a>
+
+        <p class="copyright">
+          &copy; 2026 Allan Alves Ribeiro. Todos os direitos reservados.
+        </p>
+      </section>
+    </div>
+  </body>
+</html>
